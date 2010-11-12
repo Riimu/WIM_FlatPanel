@@ -1,0 +1,14 @@
+v2.0
+
+- Added new color theme "Flat Panel - Grey"
+- Class icons are slightly smoother, as I redid them by resizing bigger ones
+- Added internal icons for everything and redid existing ones
+- Tabs are now also skinned
+- Moved resize icon outside the writing area, so you can actually use it
+- Moved the "is typing" icon inside the chat area.
+- Fonts in the header are now slightly smaller to accommodate longer names
+- Class and Race name are now abbreviated in the title (in English client)
+
+v1.0
+
+- First public release
