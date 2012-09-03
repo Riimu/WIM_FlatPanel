@@ -10,22 +10,26 @@ WIM_FlatPanel_Abbreviations = {
 		["Rogue"] = "Ro",
 		["Shaman"] = "Sh",
 		["Warlock"] = "Wl",
-		["Warrior"] = "Wr"
+		["Warrior"] = "Wr",
+		["Monk"] = "Mo"
 	},
 	
 	["race"] = {
 		["Human"] = "Hum",
 		["Dwarf"] = "Dwa",
-		["Night Elf"] = "Nig", -- gers (don't sue me)
+		["Night Elf"] = "Nig",
 		["Gnome"] = "Gno",
 		["Draenei"] = "Dra",
 		["Worgen"] = "Wor",
 		
-		["Orc"] = "Orc", -- har, har
+		["Orc"] = "Orc",
+		["Troll"] = "Tro",
 		["Undead"] = "Und",
-		["Tauren"] = "Tau", -- As opposed to space marines
+		["Tauren"] = "Tau",
 		["Blood Elf"] = "Blo",
 		["Goblin"] = "Gob",
+		
+		["Pandaren"] = "Pan"
 	}
 	
 }

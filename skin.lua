@@ -32,7 +32,7 @@ local defaultTextures = {
 	["icons\\scroll_up"] = {
 		disabled = ""
 	},
-	["icons\\scroll_down"]= {
+	["icons\\scroll_down"] = {
 		disabled = ""
 	},
 	["icons\\prev"] = {
@@ -41,18 +41,27 @@ local defaultTextures = {
 	["icons\\next"] = {
 		disabled = ""
 	},
+	["buttons"] = "",
 };
 
 local function getTexture (name, state, textures, skinDir, isDefault)
 	if (textures and textures[name]) then
 		if (type(textures[name]) == "table" and state and textures[name][state]) then
 			if (type(textures[name][state]) == "string") then
-				return skinDir .. textures[name][state];
+				if (textures[name][state] == "") then
+					return "";
+				else
+					return skinDir .. textures[name][state];
+				end
 			else
 				return skinDir .. name .. "_" .. state;
 			end
 		elseif (type(textures[name]) == "string") then
-			return skinDir .. textures[name];
+			if (textures[name] == "") then
+				return "";
+			else
+				return skinDir .. textures[name];
+			end
 		else		
 			return skinDir .. name;
 		end
@@ -68,7 +77,7 @@ local function getSkin (name, dir, textures)
 	
 	return {
 		title = name,
-		version = "2.0",
+		version = "2.1",
 		author = "Rinuwise",
 		website = "http://www.rinuwise.com",
 		message_window = {
@@ -145,6 +154,8 @@ local function getSkin (name, dir, textures)
 					blank       = {.25, .50, .25, .75, .50, .50, .50, .75},
 					gm          = {.50, .50, .50, .75, .75, .50, .75, .75},
 					deathknight = {.75, .50, .75, .75,   1, .50,   1, .75},
+					
+					monk        = {  0, .75,   0,   1, .25, .75, .25,   1},
 				},
 				from = {
 					points = {
@@ -262,7 +273,7 @@ local function getSkin (name, dir, textures)
 					width = 16,
 					height = 16,
 					points = {
-						{"BOTTOMLEFT", "window", "BOTTOMRIGHT", 1, 1}
+						{"BOTTOMLEFT", "window", "BOTTOMRIGHT", 0, 1}
 					}
 				},
 				shortcuts = {
