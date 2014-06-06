@@ -1,4 +1,4 @@
-## Interface: 50001
+## Interface: 50400
 ## Title: WIM Skin - Flat Panel
 ## Version: 2.1
 ## Author: Rinuwise
