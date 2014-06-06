@@ -18,6 +18,6 @@ Done! This will cause WIM to use the flat panel in chat windows instead.
 
 ## Credits ##
 
-Copyright (C) 2010 - 2012 to Rinuwise
+Copyright (C) 2010 - 2014 to Riikka Kalliomäki
 
 see LICENSE for license information
