@@ -1,7 +1,7 @@
-## Interface: 50400
+## Interface: 60000
 ## Title: WIM Skin - Flat Panel
-## Version: 2.1
-## Author: Rinuwise
+## Version: 2.1.2
+## Author: Riimu
 ## Notes: A plain WIM Skin designed for efficiency
 ## Dependencies: WIM
 skin.xml
