@@ -2,11 +2,11 @@ local function formatDetails (window, guild, level, race, class)
     if(guild ~= "") then
 		guild = "<" .. guild .. "> ";
     end
-	
+
 	local shorted = false;
-	
+
 	-- Abbreviate, if abbreviations exist
-	if (WIM_FlatPanel_Abbreviations) then		
+	if (WIM_FlatPanel_Abbreviations) then
 		if (WIM_FlatPanel_Abbreviations["race"][race]) then
 			race = WIM_FlatPanel_Abbreviations["race"][race];
 			shorted = true;
@@ -16,7 +16,7 @@ local function formatDetails (window, guild, level, race, class)
 			shorted = true;
 		end
 	end
-	
+
 	if (shorted) then
 		return "|cffffffff" .. guild .. level .. " " .. race .. "/" .. class .. "|r";
 	else
@@ -62,7 +62,7 @@ local function getTexture (name, state, textures, skinDir, isDefault)
 			else
 				return skinDir .. textures[name];
 			end
-		else		
+		else
 			return skinDir .. name;
 		end
 	elseif (not isDefault) then
@@ -74,12 +74,12 @@ end
 
 local function getSkin (name, dir, textures)
 	local skin = imageDir .. dir .. "\\";
-	
+
 	return {
 		title = name,
-		version = "2.1",
-		author = "Rinuwise",
-		website = "http://www.rinuwise.com",
+		version = "2.2",
+		author = "Riimu",
+		website = "http://www.riimu.net",
 		message_window = {
 			texture = getTexture("message_window", "default", textures, skin),
 			min_width = 150,
@@ -139,23 +139,24 @@ local function getSkin (name, dir, textures)
 						{"TOPLEFT", "window", "TOPLEFT", 1, -1}
 					},
 					is_round = false,
-					
+
 					warrior     = {  0,   0,   0, .25, .25,   0, .25, .25},
 					paladin     = {.25,   0, .25, .25, .50,   0, .50, .25},
 					hunter      = {.50,   0, .50, .25, .75,   0, .75, .25},
 					rogue       = {.75,   0, .75, .25,   1,   0,   1, .25},
-					
-					priest      = {  0, .25,   0, .50, .25, .25, .25, .50},
-					shaman      = {.25, .25, .25, .50, .50, .25, .50, .50},
-					mage        = {.50, .25, .50, .50, .75, .25, .75, .50},
-					warlock     = {.75, .25, .75, .50,   1, .25,   1, .50},
 
-					druid       = {  0, .50,   0, .75, .25, .50, .25, .75},
-					blank       = {.25, .50, .25, .75, .50, .50, .50, .75},
-					gm          = {.50, .50, .50, .75, .75, .50, .75, .75},
-					deathknight = {.75, .50, .75, .75,   1, .50,   1, .75},
-					
-					monk        = {  0, .75,   0,   1, .25, .75, .25,   1},
+					priest      = {  0, .25,   0, .50, .25, .25, .25, .50},
+					deathknight = {.25, .25, .25, .50, .50, .25, .50, .50},
+					shaman      = {.50, .25, .50, .50, .75, .25, .75, .50},
+					mage        = {.75, .25, .75, .50,   1, .25,   1, .50},
+
+					warlock     = {  0, .50,   0, .75, .25, .50, .25, .75},
+					monk        = {.25, .50, .25, .75, .50, .50, .50, .75},
+					druid       = {.50, .50, .50, .75, .75, .50, .75, .75},
+					demonhunter = {.75, .50, .75, .75,   1, .50,   1, .75},
+
+					gm          = {  0, .75,   0,   1, .25, .75, .25,   1},
+					blank       = {.25, .75, .25,   1, .50, .75, .50,   1},
 				},
 				from = {
 					points = {

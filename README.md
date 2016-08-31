@@ -2,14 +2,16 @@
 
 This is a skin for World of Warcraft addon WIM (WoW Instant Messenger). This
 addon merely adds a visual skin for the addon and does not function without the
-addon itself. For more information about WIM, see: http://www.wimaddon.com
+addon itself. For more information about WIM, see
+[WoWInterface](http://www.wowinterface.com/downloads/info5342-WIMWoWInstantMessenger.html)
+or [Curse Addons](https://mods.curse.com/addons/wow/wim-3)
 
 ## Installation ##
 
 To install, simply install this like any other WoW interface addon and then
 change the settings in your WIM to use the skin.
 
-Step by step install instructions: 
+Step by step install instructions:
 
 1. Copy the folder to your WoW\Interface\Addons folder
 2. In WoW, go to Wim Options -> Display Settings -> Window Skin -> Flat Panel
@@ -18,6 +20,6 @@ Done! This will cause WIM to use the flat panel in chat windows instead.
 
 ## Credits ##
 
-Copyright (C) 2010 - 2014 to Riikka Kalliomäki
+Copyright (C) 2010 - 2016 to Riikka Kalliomäki
 
 see LICENSE for license information
